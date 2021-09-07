@@ -1,0 +1,150 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+.landing-page {
+    width     : 100%;
+    min-height: 100vh;
+    background: linear-gradient(264.55deg, #243E94 -1.6%, rgba(5, 250, 193, 0.79) 105.68%, rgba(5, 250, 193, 0.79) 105.68%);
+}
+
+/* navbar css */
+
+.hdr {
+    padding: 15px 20px;
+}
+
+.navbar {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.nav-links ul {
+    list-style: none;
+    display   : flex;
+}
+
+.menu-item {
+    margin: 0 20px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color          : white;
+    font-size      : 22px;
+}
+
+/* landing page content css */
+
+.landing-page-content {
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
+}
+
+.landing-page-left {
+    width: 40%;
+}
+
+.landing-page-right {
+    margin        : 40px 0;
+    width         : 40%;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+.landing-page-right img {
+    width: 70%;
+}
+
+.main-sponsor {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    margin-top: 40px;
+}
+
+.main-sponsor img {
+    width: 40%;
+}
+
+.dashboard {
+    cursor: pointer;
+    display        : flex;
+    align-items    : center;
+    margin         : 20px 0;
+    background     : linear-gradient(188.67deg, #0F0909 5.98%, rgba(46, 18, 218, 0.5) 173.37%);
+    box-shadow     : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(40px);
+    border-radius: 7px;
+    padding: 5px 7px;
+    margin-top: 25px;
+}
+.dashboard p{
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}
+.dashboard svg{
+    height: 40px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1025px) {
+    .line {
+        width     : 30px;
+        height    : 3px;
+        margin    : 5px;
+        background: white;
+    }
+
+    .navbar {
+        align-items: flex-start;
+    }
+
+    .hamburger {
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        display       : none;
+    }
+
+    .landing-page-content{
+        flex-direction: column-reverse;
+    }
+    .landing-page-left{
+        width: 80%;
+    }
+    .landing-page-right{
+        width: 80%;
+    }
+    .vb-logo{
+        width: 100%; 
+    }
+    .main-sponsor{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .navbar svg{
+        width: 150px;
+    }
+    .navbar{
+        align-items: center;
+    }
+    .dashboard p{
+        font-size: 15px;
+    }
+    .dashboard svg{
+        height: 30px;
+        width: 25px;
+    }
+}
