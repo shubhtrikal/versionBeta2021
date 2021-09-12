@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserret', serif;
+}
+
+.scheduleHeading h1{
+    text-align: center;
+    font-size: 50px;
+    color: #0C155E;
+    font-weight: lighter;
+    letter-spacing: 12px;
+}
+
+.schedule{
+    position: relative;
+    margin-top: 60px;
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 1000px;
+    box-sizing: border-box;
+}
+
+.schedule:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 87%;
+    background: #6AB6BB;
+}
+.schedule ul{
+    margin: 0;
+    padding: 0;
+}
+
+.schedule ul li{
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.schedule ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.schedule ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+.schedule-content{
+    padding-bottom: 20px;
+}
+
+.schedule ul li:nth-child(odd):before{
+    content: '';
+    position: absolute;
+    top:24px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: #109CA5;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(33,233,200,0.2);
+}
+
+.schedule ul li:nth-child(even):before{
+    content: '';
+    position: absolute;
+    top:24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: #109CA5;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(33,233,200,0.2);
+}
+
+.schedule ul li h3{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: #109CA5;
+}
+
+.schedule ul li p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.schedule ul li .schedule-register h4{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.schedule ul li:nth-child(odd) .schedule-register{
+    position: absolute;
+    top: 12px;
+    right: -230px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #109CA5;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(33,233,200,0.3);
+}
+
+.schedule ul li:nth-child(even) .schedule-register{
+    position: absolute;
+    top: 12px;
+    left: -230px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #109CA5;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(33, 233, 200, 0.3);
+}
+
+@media (max-width: 1000px){
+    .schedule{
+        width:100%;
+    }
+}
+@media (max-width: 767px) {
+    .scheduleHeading h1{
+        text-align: center;
+        font-size: 40px;
+        color: #0C155E;
+        font-weight: lighter;
+        letter-spacing: 8px;
+    }
+    .schedule{
+        width:100%;
+    }
+    .schedule:before{
+        left: 20px;
+    }
+    .schedule ul li:nth-child(odd),
+    .schedule ul li:nth-child(even){
+        width:100%;
+        text-align: left;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+    .schedule ul li:nth-child(odd):before,
+    .schedule ul li:nth-child(even):before{
+        top: -18px;
+        left:16px;
+    }
+    .schedule ul li:nth-child(odd) .schedule-register,
+    .schedule ul li:nth-child(even) .schedule-register{
+        top: -30px;
+        left: 50px;
+        right: inherit;
+
+    }
+
+}
