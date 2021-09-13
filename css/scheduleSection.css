@@ -59,6 +59,10 @@
     padding-bottom: 20px;
 }
 
+.schedule-content p{
+    text-align: center;
+}
+
 .schedule ul li:nth-child(odd):before{
     content: '';
     position: absolute;
