@@ -5,6 +5,8 @@
     font-family: 'Montserret', serif;
 }
 
+
+
 .scheduleHeading h1{
     text-align: center;
     font-size: 50px;
@@ -15,7 +17,7 @@
 
 .schedule{
     position: relative;
-    margin-top: 60px;
+    margin-top: 30px;
     margin: 50px auto;
     padding: 40px 0;
     width: 1000px;

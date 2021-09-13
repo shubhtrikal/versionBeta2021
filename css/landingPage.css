@@ -9,6 +9,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.logo svg{
+    height: 50px;
+}
 .landing-page {
     width     : 100%;
     min-height: 100vh;
@@ -18,7 +21,7 @@
 /* navbar css */
 
 .navbar {
-    padding        : 10px 0;
+    padding        : 8px 0;
     position       : fixed;
     z-index        : 999;
     width          : 100%;
@@ -75,8 +78,8 @@
     .nav-links {
         position      : absolute;
         right         : 0;
-        height        : 92vh;
-        top           : 10vh;
+        height        : 90vh;
+        top           : 9vh;
         background    : linear-gradient(264.55deg, #243E94 -1.6%, rgba(5, 250, 193, 0.79) 105.68%, rgba(5, 250, 193, 0.79) 105.68%);
         display       : flex;
         flex-direction: column;
@@ -104,6 +107,11 @@
     background     : linear-gradient(264.55deg, #243E94 -1.6%, rgba(5, 250, 193, 0.79) 105.68%, rgba(5, 250, 193, 0.79) 105.68%);
     backdrop-filter: blur(40px);
 }
+
+.fixed_body{
+    overflow: hidden;
+    block-size: 100%;
+  }
 
 @keyframes navLinkAnim {
     from {

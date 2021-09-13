@@ -6,21 +6,27 @@
 }
 
 .about-section{
+    margin-top: 50px;
     width: 100%;
     min-height: 95vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0% 10%;
 }
 
 .about-left{
     overflow: hidden;
-    
+    background: url(../images/aboutImage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 500px;
+    background-size: cover;
 }
-
+ 
 .about-right{
-    width: 45%;
+    width: 40%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -55,6 +61,12 @@
         
     }
 }
+@media screen and (max-width: 800px){
+    .about-left{
+        height: 300px;
+    }
+}
+
 @media screen and (max-width: 500px){
     .about-right h1{
         font-size: 40px;
@@ -64,7 +76,7 @@
     }
     
     .about-left{
-        height: 400px;
+        height: 200px;
         width: 80%;
     }
     .about-right{

@@ -3,6 +3,7 @@ const nav = document.querySelector('.navbar');
 const navLinks = document.querySelector('.nav-links');
 const navLinksList = document.querySelectorAll('.nav-links li');
 const linkMain = document.querySelectorAll('.menu-item a');
+const body = document.getElementById("body")
 
 const navSlide = () => {
 
