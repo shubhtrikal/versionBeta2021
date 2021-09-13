@@ -7,15 +7,16 @@
 
 .about-section{
     width: 100%;
-    min-height: 75vh;
+    min-height: 95vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    padding: 0% 10%;
 }
 
 .about-left{
     overflow: hidden;
+    
 }
 
 .about-right{
@@ -41,14 +42,17 @@
 @media screen and (max-width: 1025px){
     .about-section{
         flex-direction: column-reverse;
-        padding: 50px 0;
+        padding: 50px 0 ;
         justify-content: center;
+        
     }
     .about-left{
         width: 70%;
+    
     }
     .about-right{
         width: 70%;
+        
     }
 }
 @media screen and (max-width: 500px){
