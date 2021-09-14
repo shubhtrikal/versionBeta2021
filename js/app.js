@@ -3,7 +3,8 @@ const nav = document.querySelector('.navbar');
 const navLinks = document.querySelector('.nav-links');
 const navLinksList = document.querySelectorAll('.nav-links li');
 const linkMain = document.querySelectorAll('.menu-item a');
-const body = document.getElementById("body")
+const body = document.querySelector("body");
+const loader = document.querySelector(".preloader");
 
 const navSlide = () => {
 
@@ -18,6 +19,8 @@ const navSlide = () => {
 
         navLinks.classList.toggle('nav-active');
 
+        body.classList.toggle('fixed-body');
+
         navLinksList.forEach((link, index) => {
             if (link.style.animation) {
                 link.style.animation = '';
@@ -26,7 +29,6 @@ const navSlide = () => {
                 link.style.animation = `navLinkAnim 0.5s ease forwards ${index / 7 + 0.5}s`;
             }
         });
-
         burger.classList.toggle('toggle');
     });
 
@@ -53,6 +55,7 @@ const navClick = () => {
     for (var x = 0; x < linkMain.length; x++) {
         linkMain[x].addEventListener('click', () => {
             navLinks.classList.toggle('nav-active');
+            body.classList.toggle('fixed-body');
 
             navLinksList.forEach((link, index) => {
                 if (link.style.animation) {
@@ -68,16 +71,17 @@ const navClick = () => {
     }
 }
 
-
-
 const functionCall = () =>{
     navClick();
     navSlide();
     navScroll();
-    
 }
 
 functionCall();
+
+window.addEventListener('load',setTimeout( ()=>{
+    loader.classList.add('preload-finish');
+}, 3500));
 
 
 
