@@ -6,24 +6,25 @@
     padding        : 0;
     box-sizing     : border-box;
     scroll-behavior: smooth;
-    font-family: 'Montserrat', sans-serif;
+    font-family    : 'Montserrat', sans-serif;
 }
 
-.preloader{
-    position: fixed;
-    z-index: 5000;
-    width: 100%;
-    height: 100vh;
-    background: #fff url(../images/preloader.gif);
+.preloader {
+    position           : fixed;
+    z-index            : 5000;
+    width              : 100%;
+    height             : 100vh;
+    background         : #fff url(../images/preloader.gif);
     background-position: center;
-    background-repeat: no-repeat;
-    transition: opacity 0.5s ease;
+    background-repeat  : no-repeat;
+    transition         : opacity 0.5s ease;
 }
 
 
-.logo svg{
+.logo svg {
     height: 50px;
 }
+
 .landing-page {
     width     : 100%;
     min-height: 100vh;
@@ -53,11 +54,11 @@
 
 
 .nav-links a {
-    color      : white;
-    font-size  : 20px;
-    font-weight: 500;
+    color          : white;
+    font-size      : 20px;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: normal;
+    font-family    : 'Montserrat', sans-serif;
 }
 
 .nav-links a::after {
@@ -87,10 +88,11 @@
 }
 
 @media screen and (max-width: 868px) {
-    .navbar{
+    .navbar {
         justify-content: space-between;
-        padding: 8px 30px;
+        padding        : 8px 30px;
     }
+
     .nav-links {
         position      : absolute;
         right         : 0;
@@ -116,7 +118,7 @@
 }
 
 
-/* toggle classess used by js  */
+/* toggle classes used by js  */
 
 .nav-active {
     transform: translateX(0%);
@@ -127,13 +129,13 @@
     backdrop-filter: blur(40px);
 }
 
-.fixed-body{
-    overflow: hidden;
+.fixed-body {
+    overflow  : hidden;
     block-size: 100%;
 }
 
-.preload-finish{
-    opacity: 0;
+.preload-finish {
+    opacity       : 0;
     pointer-events: none;
 }
 
@@ -165,7 +167,7 @@
 /* landing page content css */
 
 .landing-page-content {
-    padding-top    : 70px;
+    padding-top    : 110px;
     display        : flex;
     justify-content: space-around;
     align-items    : center;
@@ -173,6 +175,10 @@
 
 .landing-page-left {
     width: 40%;
+}
+
+.landing-page-left svg{
+    width: 90%;    
 }
 
 .landing-page-right {
@@ -188,50 +194,136 @@
 }
 
 .main-sponsor {
+
     display       : flex;
     flex-direction: column;
     align-items   : center;
-    margin-top    : 40px;
+    margin        : 40px 0 30px 0;
+    /* background-color: white; */
+    width: 50%;
+    border-radius: 8px;
+    padding: 8px 0;
 }
 
 .main-sponsor img {
-    width: 40%;
+    width: 80%;
 }
 
 .main-sponsor p {
-    font-size    : 0.7em;
+    font-size    : 1.1em;
     margin-bottom: 10px;
 }
 
-.dashboard {
-    cursor         : pointer;
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    margin         : 20px 0;
-    background     : linear-gradient(188.67deg, #0F0909 5.98%, rgba(46, 18, 218, 0.5) 173.37%);
-    box-shadow     : 0px 4px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(40px);
-    border-radius  : 7px;
-    padding        : 10px 13px;
-    margin-top     : 25px;
-    text-align     : center;
+button,
+button::after {
+    width     : 250px;
+    height    : 50px;
+    font-size : 25px;
+    background: #de6161;
+    background: -webkit-linear-gradient(to right, #2657eb, #de6161);
+    background: linear-gradient(to right, #2657eb, #de6161);
+
+    border        : 0;
+    color         : #fff;
+    letter-spacing: 3px;
+    box-shadow    : 6px 0px 0px #de6161;
+    outline       : transparent;
+    position      : relative;
+    cursor        : pointer;
+    border-radius : 20px;
+    margin-left: 20px;
 }
 
-.dashboard p {
-    color      : white;
-    font-size  : 1em;
-    font-weight: 900;
+button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+
+    content   : 'Go to dashboard';
+    display   : block;
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    right     : 0;
+    bottom    : 0;
+    background: #de6161;
+    background: -webkit-linear-gradient(to right, #2657eb, #de6161);
+    background: linear-gradient(to right, #2657eb, #de6161);
+
+
+    text-shadow: -3px -3px 0px #051df8, 3px 3px 0px #00E6F6;
+    margin-left: 8px;
+    clip-path  : var(--slice-0);
 }
 
-.dashboard svg {
-    height      : 40px;
-    width       : 30px;
-    margin-right: 10px;
+button:hover::after {
+    animation                : 1s glitch;
+    animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+    0% {
+        clip-path: var(--slice-1);
+        transform: translate(-20px, -10px);
+    }
+
+    10% {
+        clip-path: var(--slice-3);
+        transform: translate(10px, 10px);
+    }
+
+    20% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 10px);
+    }
+
+    30% {
+        clip-path: var(--slice-3);
+        transform: translate(0px, 5px);
+    }
+
+    40% {
+        clip-path: var(--slice-2);
+        transform: translate(-5px, 0px);
+    }
+
+    50% {
+        clip-path: var(--slice-3);
+        transform: translate(5px, 0px);
+    }
+
+    60% {
+        clip-path: var(--slice-4);
+        transform: translate(5px, 10px);
+    }
+
+    70% {
+        clip-path: var(--slice-2);
+        transform: translate(-10px, 10px);
+    }
+
+    80% {
+        clip-path: var(--slice-5);
+        transform: translate(20px, -10px);
+    }
+
+    90% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 0px);
+    }
+
+    100% {
+        clip-path: var(--slice-1);
+        transform: translate(0);
+    }
 }
 
 @media screen and (max-width: 1025px) {
     .landing-page-content {
+        padding-top: 50px;
         flex-direction: column-reverse;
     }
 
@@ -250,10 +342,6 @@
     .main-sponsor {
         margin-top: 30px;
     }
-
-    .dashboard p {
-        font-size: 0.8em;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -265,23 +353,18 @@
         width: 100%;
     }
 
-    .dashboard svg {
-        height: 30px;
-        width : 25px;
-    }
-
     .landing-page-content {
         padding-top: 50px;
     }
-    .preloader{
+
+    .preloader {
         background-size: contain;
     }
 }
 
-@media screen and (max-width: 350px)
-{
-    .navbar{
+@media screen and (max-width: 350px) {
+    .navbar {
         padding: 8px 12px;
     }
-    
+
 }

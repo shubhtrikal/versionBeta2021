@@ -55,7 +55,7 @@ const navClick = () => {
     for (var x = 0; x < linkMain.length; x++) {
         linkMain[x].addEventListener('click', () => {
             navLinks.classList.toggle('nav-active');
-            body.classList.toggle('fixed-body');
+            body.classList.remove('fixed-body');
 
             navLinksList.forEach((link, index) => {
                 if (link.style.animation) {
@@ -82,6 +82,3 @@ functionCall();
 window.addEventListener('load',setTimeout( ()=>{
     loader.classList.add('preload-finish');
 }, 3500));
-
-
-
