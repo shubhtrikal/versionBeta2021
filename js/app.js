@@ -78,3 +78,6 @@ navSlide();
 window.addEventListener('load', setTimeout(() => {
     loader.classList.add('preload-finish');
 }, 3500));
+
+
+
