@@ -5,6 +5,8 @@ const navLinksList = document.querySelectorAll('.nav-links li');
 const linkMain = document.querySelectorAll('.menu-item a');
 const body = document.querySelector("body");
 const loader = document.querySelector(".preloader");
+var w = document.documentElement.clientWidth;
+
 
 const navSlide = () => {
 
@@ -18,6 +20,7 @@ const navSlide = () => {
         }
 
         navLinks.classList.toggle('nav-active');
+        flag = 1;
 
         body.classList.toggle('fixed-body');
 
@@ -30,8 +33,25 @@ const navSlide = () => {
             }
         });
         burger.classList.toggle('toggle');
-    });
 
+        for (var x = 0; x < linkMain.length; x++) {
+            linkMain[x].addEventListener('click', () => {
+                navLinks.classList.toggle('nav-active');
+                body.classList.toggle('fixed-body');
+
+                navLinksList.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = '';
+                    }
+                    else {
+                        link.style.animation = `navLinkAnim 0.5s ease forwards ${index / 7 + 0.5}s`;
+                    }
+                });
+
+                burger.classList.toggle('toggle');
+            });
+        }
+    });
 }
 
 
@@ -50,35 +70,11 @@ const navScroll = () => {
 };
 
 
+navScroll();
+navSlide();
 
-const navClick = () => {
-    for (var x = 0; x < linkMain.length; x++) {
-        linkMain[x].addEventListener('click', () => {
-            navLinks.classList.toggle('nav-active');
-            body.classList.remove('fixed-body');
 
-            navLinksList.forEach((link, index) => {
-                if (link.style.animation) {
-                    link.style.animation = '';
-                }
-                else {
-                    link.style.animation = `navLinkAnim 0.5s ease forwards ${index / 7 + 0.5}s`;
-                }
-            });
-    
-            burger.classList.toggle('toggle');
-        })
-    }
-}
 
-const functionCall = () =>{
-    navClick();
-    navSlide();
-    navScroll();
-}
-
-functionCall();
-
-window.addEventListener('load',setTimeout( ()=>{
+window.addEventListener('load', setTimeout(() => {
     loader.classList.add('preload-finish');
 }, 3500));

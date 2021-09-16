@@ -6,6 +6,7 @@
     padding        : 0;
     box-sizing     : border-box;
     scroll-behavior: smooth;
+    scroll-margin-top: 100px;
     font-family    : 'Montserrat', sans-serif;
 }
 
@@ -175,6 +176,9 @@
 
 .landing-page-left {
     width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .landing-page-left svg{
