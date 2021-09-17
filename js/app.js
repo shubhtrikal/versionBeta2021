@@ -20,7 +20,6 @@ const navSlide = () => {
         }
 
         navLinks.classList.toggle('nav-active');
-        flag = 1;
 
         body.classList.toggle('fixed-body');
 
@@ -33,6 +32,8 @@ const navSlide = () => {
             }
         });
         burger.classList.toggle('toggle');
+
+        
 
         for (var x = 0; x < linkMain.length; x++) {
             linkMain[x].addEventListener('click', () => {

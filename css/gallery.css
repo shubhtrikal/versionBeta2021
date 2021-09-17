@@ -19,10 +19,10 @@
 }
 
 .gallery-grid {
-    width                : 90%;
-    margin               : 0 5%;
+    width                : 80%;
+    margin               : 0 10%;
     display              : grid;
-    grid-auto-rows       : minmax(250px, auto);
+    grid-auto-rows       : minmax(200px, auto);
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap             : 5px;
 }
@@ -63,13 +63,13 @@
 .img6 {
     background-image: url(../images/img6.jpeg);
     grid-column     : 1/7;
-    height          : 600px;
+    height          : 450px;
 }
 
 .img7 {
     background-image: url(../images/img7.jpeg);
     grid-column     : 1/4;
-    height          : 400px;
+    height          : 300px;
 }
 
 .img8 {
