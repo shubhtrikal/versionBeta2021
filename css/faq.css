@@ -29,9 +29,9 @@
     margin: 5%;
 }
 
-
 p.accordion {
     background: linear-gradient(180deg, rgba(16, 156, 165, 0.2) 0%, rgba(138, 176, 210, 0.04) 100%), #FFFFFF;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -41,10 +41,10 @@ p.accordion {
     outline: none;
     transition: 0.4s;
     margin-bottom:10px;
-    border-radius: 23px;
+    border-radius: 13px;
 }
 
- 
+
 p .accordion.active, p .accordion:hover {
     background-color: #ddd;
     
@@ -53,6 +53,7 @@ p .accordion.active, p .accordion:hover {
      font-weight: 300;
      font: bold;
 }
+
 
 p.accordion:after {
     content: '\2795'; 
@@ -80,8 +81,7 @@ div .panel {
     margin-left: 4%;
     margin-right: 4%;
     width: 70%;
-    border-left: 2px solid rgb(5, 9, 238);
-
+    border-left: 3px solid #6cd2da;
 }
 
 div.panel.show {
