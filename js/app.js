@@ -5,7 +5,10 @@ const navLinksList = document.querySelectorAll('.nav-links li');
 const linkMain = document.querySelectorAll('.menu-item a');
 const body = document.querySelector("body");
 const loader = document.querySelector(".preloader");
-var w = document.documentElement.clientWidth;
+const currentLocation = location.href;
+console.log(currentLocation);
+
+
 
 
 const navSlide = () => {
@@ -32,26 +35,6 @@ const navSlide = () => {
             }
         });
         burger.classList.toggle('toggle');
-
-        
-
-        for (var x = 0; x < linkMain.length; x++) {
-            linkMain[x].addEventListener('click', () => {
-                navLinks.classList.toggle('nav-active');
-                body.classList.toggle('fixed-body');
-
-                navLinksList.forEach((link, index) => {
-                    if (link.style.animation) {
-                        link.style.animation = '';
-                    }
-                    else {
-                        link.style.animation = `navLinkAnim 0.5s ease forwards ${index / 7 + 0.5}s`;
-                    }
-                });
-
-                burger.classList.toggle('toggle');
-            });
-        }
     });
 }
 
@@ -70,15 +53,38 @@ const navScroll = () => {
     }
 };
 
+const navClose = () => {
+    for (var x = 0; x < linkMain.length; x++) {
+        linkMain[x].addEventListener('click', () => {
+            if(navLinks.classList.contains('nav-active'))
+            {
+                navLinks.classList.toggle('nav-active');
+            }
+            if(body.classList.contains('fixed-body'))
+            {
+                body.classList.toggle('fixed-body');
+            }
+
+            navLinksList.forEach((link, index) => {
+                link.style.animation = '';
+            });
+
+            if(burger.classList.contains('toggle'))
+            {
+                burger.classList.toggle('toggle');
+            }
+        });
+    }
+}
+
 
 navScroll();
 navSlide();
+navClose();
 
 
 
 window.addEventListener('load', setTimeout(() => {
     loader.classList.add('preload-finish');
 }, 3500));
-
-
 

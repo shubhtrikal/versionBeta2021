@@ -2,12 +2,12 @@
 
 
 * {
-    margin         : 0;
-    padding        : 0;
-    box-sizing     : border-box;
-    scroll-behavior: smooth;
+    margin           : 0;
+    padding          : 0;
+    box-sizing       : border-box;
+    scroll-behavior  : smooth;
     scroll-margin-top: 100px;
-    font-family    : 'Montserrat', sans-serif;
+    font-family      : 'Montserrat', sans-serif;
 }
 
 .preloader {
@@ -41,7 +41,6 @@
     width          : 100%;
     display        : flex;
     justify-content: space-around;
-    align-items    : center;
     min-height     : 8vh;
 }
 
@@ -49,8 +48,9 @@
 .nav-links {
     display        : flex;
     justify-content: space-around;
-    width          : 70%;
+    width          : 65%;
     list-style     : none;
+    margin-top: 13px;
 }
 
 
@@ -58,7 +58,6 @@
     color          : white;
     font-size      : 20px;
     text-decoration: none;
-    font-weight: normal;
     font-family    : 'Montserrat', sans-serif;
 }
 
@@ -140,6 +139,7 @@
     pointer-events: none;
 }
 
+
 @keyframes navLinkAnim {
     from {
         opacity  : 0;
@@ -175,14 +175,14 @@
 }
 
 .landing-page-left {
-    width: 40%;
-    display: flex;
+    width          : 40%;
+    display        : flex;
     justify-content: center;
-    align-items: center;
+    align-items    : center;
 }
 
-.landing-page-left svg{
-    width: 90%;    
+.landing-page-left svg {
+    width: 90%;
 }
 
 .landing-page-right {
@@ -199,14 +199,14 @@
 
 .main-sponsor {
 
-    display       : flex;
-    flex-direction: column;
-    align-items   : center;
-    margin        : 40px 0 30px 0;
+    display            : flex;
+    flex-direction     : column;
+    align-items        : center;
+    margin             : 40px 0 30px 0;
     /* background-color: white; */
-    width: 50%;
-    border-radius: 8px;
-    padding: 8px 0;
+    width              : 50%;
+    border-radius      : 8px;
+    padding            : 8px 0;
 }
 
 .main-sponsor img {
@@ -235,7 +235,7 @@ button::after {
     position      : relative;
     cursor        : pointer;
     border-radius : 20px;
-    margin-left: 20px;
+    margin-left   : 20px;
 }
 
 button::after {
@@ -327,10 +327,15 @@ button:hover::after {
 
 @media screen and (max-width: 1025px) {
     .landing-page-content {
-        padding-top: 50px;
+        padding-top   : 50px;
         flex-direction: column-reverse;
     }
-
+    .navbar{
+        align-items: center;
+    }
+    .nav-links{
+        margin: 0;
+    }
     .landing-page-left {
         width: 60%;
     }
