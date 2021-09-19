@@ -126,7 +126,7 @@
 
 .nav-color {
     background     : linear-gradient(264.55deg, #243E94 -1.6%, rgba(5, 250, 193, 0.79) 105.68%, rgba(5, 250, 193, 0.79) 105.68%);
-    backdrop-filter: blur(40px);
+    backdrop-filter: blur(10px);
 }
 
 .fixed-body {

@@ -5,8 +5,7 @@ const navLinksList = document.querySelectorAll('.nav-links li');
 const linkMain = document.querySelectorAll('.menu-item a');
 const body = document.querySelector("body");
 const loader = document.querySelector(".preloader");
-const currentLocation = location.href;
-console.log(currentLocation);
+const upDownScroll = document.querySelector(".up-down");
 
 
 
@@ -49,6 +48,15 @@ const navScroll = () => {
         }
         else {
             nav.classList.remove('nav-color');
+        }
+
+        if(window.scrollY > 700)
+        {
+            upDownScroll.style.display = "block";
+        }
+        else
+        {
+            upDownScroll.style.display = "none";
         }
     }
 };

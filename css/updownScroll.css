@@ -3,7 +3,9 @@
     padding: 0;
 }
 
+
 .up-down {
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
