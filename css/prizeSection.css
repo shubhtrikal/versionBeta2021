@@ -4,13 +4,17 @@
      box-sizing: border-box;
      font-family: 'Montserret', serif;
    }
+   .prize-section{
+       margin-top: -8%;
+   }
    .prize-heading h1{
        text-align: center;
        font-size: 55px;
        color:#0C155E;
        font-weight: lighter;
        letter-spacing: 10px;
-       margin-bottom: 4%;
+       margin-bottom: 5%;
+       
    }
    
    .prize-section  svg {
@@ -28,9 +32,14 @@
    }
    
    @media  (max-width:700px) {
-       .prize-heading h1{
-           margin: 4%;
-           font-size: 25px;
+       
+    .prize-section{
+        margin-top: -16%;
+    }
+    
+      .prize-heading h1{
+           margin: 1%;
+           font-size: 39px;
            letter-spacing: 8px;
        }
        .prize-section svg {
