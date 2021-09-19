@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/prizeSection.css">
     <link rel="stylesheet" href="./css/specialprizes.css">
     <link rel="stylesheet" href="./css/footerSection.css">
+    <link rel="stylesheet" href="./css/updownScroll.css">
 </head>
 
 <body>
@@ -480,6 +481,36 @@
                             .cls-67 {
                                 fill: url(#Degradado_sin_nombre_950-2);
                             }
+
+                            #rotate-ellipse1,
+                            #rotate-ellipse2 {
+                                animation: move_wave1 8s linear infinite;
+                            }
+
+                            @keyframes move_wave1 {
+                                20% {
+                                    transform: translateX(0) translateZ(0) scaleY(1)
+                                }
+
+                                50% {
+                                    transform: translateX(-3%) translateZ(0) scaleY(0.8)
+                                }
+                            }
+
+                            #rotate-ellipse3,
+                            #rotate-ellipse4 {
+                                animation: move_wave3 6s linear infinite;
+                            }
+
+                            @keyframes move_wave3 {
+                                0% {
+                                    transform: translateX(0) translateZ(0) scaleY(1)
+                                }
+
+                                50% {
+                                    transform: translateX(-3%) translateZ(0) scaleY(0.9)
+                                }
+                            }
                         </style>
                         <linearGradient id="Degradado_sin_nombre_953" x1="15.79" y1="286.87" x2="387.61" y2="286.87"
                             gradientUnits="userSpaceOnUse">
@@ -488,10 +519,10 @@
                             <stop offset="0.51" stop-color="#010333" stop-opacity="0" />
                             <stop offset="0.52" stop-color="#040332" stop-opacity="0.02" />
                             <stop offset="0.62" stop-color="#490223" stop-opacity="0.31" />
-                            <stop offset="0.71" stop-color="#820117" stop-opacity="0.56" />
+                            <stop offset="0.71" stop-color="#820117" stop-opacity="0.36" />
                             <stop offset="0.8" stop-color="#af010d" stop-opacity="0.75" />
-                            <stop offset="0.88" stop-color="#ce0006" stop-opacity="0.89" />
-                            <stop offset="0.95" stop-color="#e20002" stop-opacity="0.97" />
+                            <stop offset="0.88" stop-color="#ce0006" stop-opacity="0.59" />
+                            <stop offset="0.95" stop-color="#e20002" stop-opacity="0.77" />
                             <stop offset="0.99" stop-color="#e90000" />
                         </linearGradient>
                         <linearGradient id="Degradado_sin_nombre_952" x1="16.67" y1="286.87" x2="386.73" y2="286.87"
@@ -746,26 +777,30 @@
                     </defs>
                     <g class="cls-1">
                         <g id="red_chord" data-name="red chord">
-                            <ellipse class="cls-2" cx="201.7" cy="286.87" rx="184.91" ry="106.76" />
-                            <ellipse class="cls-3" cx="201.7" cy="286.87" rx="184.91" ry="106.76" />
-                            <circle class="cls-4" cx="2144.07" cy="494.68" r="16.79"
-                                transform="translate(-1482.95 1470.53) rotate(-45)" />
-                            <path class="cls-5" d="M2150.06,494.68a6,6,0,1,1-6-6A6,6,0,0,1,2150.06,494.68Z"
-                                transform="translate(-1761.14 -190.45)" />
-                            <circle class="cls-6" cx="1777.94" cy="485.53" r="16.79"
-                                transform="translate(-867 1912.4) rotate(-76.62)" />
-                            <path class="cls-7" d="M1783.92,485.53a6,6,0,1,1-6-6A6,6,0,0,1,1783.92,485.53Z"
-                                transform="translate(-1761.14 -190.45)" />
-                            <ellipse class="cls-8" cx="201.7" cy="273.52" rx="184.91" ry="106.76" />
-                            <ellipse class="cls-9" cx="201.7" cy="273.52" rx="184.91" ry="106.76" />
-                            <circle class="cls-10" cx="2133.42" cy="419.58" r="16.79"
-                                transform="translate(-526.23 2209.09) rotate(-76.72)" />
-                            <path class="cls-11" d="M2139.4,419.58a6,6,0,1,1-6-6A6,6,0,0,1,2139.4,419.58Z"
-                                transform="translate(-1761.14 -190.45)" />
-                            <circle class="cls-12" cx="1800.61" cy="513.02" r="16.79"
-                                transform="translate(-1596.52 1233.04) rotate(-45)" />
-                            <path class="cls-13" d="M1806.59,513a6,6,0,1,1-6-6A6,6,0,0,1,1806.59,513Z"
-                                transform="translate(-1761.14 -190.45)" />
+                            <ellipse id="rotate-ellipse1" class="cls-2" cx="201.7" cy="286.87" rx="184.91"
+                                ry="106.76" />
+                            <ellipse id="rotate-ellipse2" class="cls-3" cx="201.7" cy="286.87" rx="184.91"
+                                ry="106.76" />
+                            <!-- <circle class="cls-4" cx="2144.07" cy="494.68" r="16.79"
+                                transform="translate(-1482.95 1470.53) rotate(-45)" /> -->
+                            <!-- <path class="cls-5" d="M2150.06,494.68a6,6,0,1,1-6-6A6,6,0,0,1,2150.06,494.68Z"
+                                transform="translate(-1761.14 -190.45)" /> -->
+                            <!-- <circle class="cls-6" cx="1777.94" cy="485.53" r="16.79"
+                                transform="translate(-867 1912.4) rotate(-76.62)" /> -->
+                            <!-- <path class="cls-7" d="M1783.92,485.53a6,6,0,1,1-6-6A6,6,0,0,1,1783.92,485.53Z"
+                                transform="translate(-1761.14 -190.45)" /> -->
+                            <ellipse id="rotate-ellipse3" class="cls-8" cx="201.7" cy="273.52" rx="184.91"
+                                ry="106.76" />
+                            <ellipse id="rotate-ellipse4" class="cls-9" cx="201.7" cy="273.52" rx="184.91"
+                                ry="106.76" />
+                            <!-- <circle class="cls-10" cx="2133.42" cy="419.58" r="16.79"
+                                transform="translate(-526.23 2209.09) rotate(-76.72)" /> -->
+                            <!-- <path class="cls-11" d="M2139.4,419.58a6,6,0,1,1-6-6A6,6,0,0,1,2139.4,419.58Z"
+                                transform="translate(-1761.14 -190.45)" /> -->
+                            <!-- <circle class="cls-12" cx="1800.61" cy="513.02" r="16.79"
+                                transform="translate(-1596.52 1233.04) rotate(-45)" /> -->
+                            <!-- <path class="cls-13" d="M1806.59,513a6,6,0,1,1-6-6A6,6,0,0,1,1806.59,513Z"
+                                transform="translate(-1761.14 -190.45)" /> -->
                         </g>
                         <g id="shadow">
                             <ellipse class="cls-14" cx="248.88" cy="306.31" rx="107.9" ry="62.29" />
@@ -895,13 +930,13 @@
                             <path class="cls-52"
                                 d="M1823.32,497.13l.11.05v0Zm167.73-243.22.07,0h0Zm-2.4-1.24a3.16,3.16,0,0,0-3.2,0L1794.33,363a3.14,3.14,0,0,0-1.52,3.37L1819,493.68a3.1,3.1,0,0,0,2.13,2.35v0l1.4.69a3.16,3.16,0,0,1-1.32-2L1795,367.48a3.18,3.18,0,0,1,1.52-3.38l191.12-110.34a3.13,3.13,0,0,1,2.69-.21l-1.7-.88Z"
                                 transform="translate(-1761.14 -190.45)" />
-                            <circle class="cls-53" cx="1851.28" cy="517.46" r="16.79"
+                            <!-- <circle class="cls-53" cx="1851.28" cy="517.46" r="16.79"
                                 transform="translate(-1796.58 694.84) rotate(-26.65)" />
                             <path class="cls-54" d="M1857.26,517.46a6,6,0,1,1-6-6A6,6,0,0,1,1857.26,517.46Z"
                                 transform="translate(-1761.14 -190.45)" />
                             <circle class="cls-55" cx="1911.15" cy="551.04" r="16.79"
                                 transform="translate(-825.39 2094.02) rotate(-76.72)" />
-                            <circle class="cls-56" cx="150" cy="360.6" r="5.98" />
+                            <circle class="cls-56" cx="150" cy="360.6" r="5.98" /> -->
                         </g>
                         <g id="screen1">
                             <path class="cls-57"
@@ -976,7 +1011,7 @@
             <div class="landing-page-right">
                 <img class="vb-logo" src="./images/version-beta-logo.png" alt="">
                 <div class="main-sponsor">
-                    <p>powered by</p>
+                    <p>Powered By</p>
                     <img src="./images/sponsor.png" alt="">
                 </div>
                 <button class="dashboard">Go to dashboard</button>
@@ -3901,7 +3936,7 @@
     <section id="sponsers-section">
 
         <div class="sponsers-heading">
-            <h1>Sponsers</h1>
+            <h1>SPONSORS</h1>
         </div>
 
 
@@ -3986,7 +4021,7 @@
     <section id="faq-section">
         <div class="heading-faq">
 
-            <h3>FAQs</h3>
+            <h3>FAQ's</h3>
         </div>
 
 
@@ -4059,7 +4094,7 @@
         <section class="footer-section">
             <div class="footerLeft">
                 <div class="logo">
-                    <svg width="250" height="150" viewBox="0 0 165 68" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <svg viewBox="0 0 165 68" fill="none" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g filter="url(#filter0_d)">
                             <rect x="4" width="60" height="60" fill="url(#pattern0)" />
@@ -4147,12 +4182,17 @@
             <p>Copyright © 2021 by <span>ISTE-SC MANIT</span>. All rights reserved.</p>
         </div>
     </footer>
+
+    <section class="updown-scroll">
+         <button class="up-down"><i class="fa fa-arrow-up"></i></button>
+    </section>
     <!--Script Links-->
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/f6816dd194.js"></script>
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/faq.js"></script>
+    <script src="./js/updownScroll.js"></script>
 </body>
 
 </html>

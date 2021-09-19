@@ -49,7 +49,9 @@ span i:hover{
     backdrop-filter: blur(16px);
 }
 
-.footerLeft .logo{
+.footerLeft .logo svg{
+    width: 250px;
+    height: 150px;
     margin-top: 70px;
     margin-left: 105px;
 }
@@ -146,8 +148,11 @@ span i:hover{
         min-height: 55vh;
         text-align: center;
     }
-    .footerLeft .logo {
-        margin-left: -15px;
+    .footerLeft .logo svg{
+        margin-left: -20px;
+        text-align: center;
+        width: 200px;
+        height: 105px;
     }
     .copyright{
         top: 95%;
@@ -163,19 +168,25 @@ span i:hover{
 @media (max-width: 600px) {
     footer{
         width: 100%;
-        min-height: 110vh;
+        min-height: 115vh;
         display: block;
         text-align: center;
     }
     .footer-section{
         width: 97%;
-        min-height: 105vh;
+        min-height: 110vh;
         display: block;
         text-align: center;
         top: 2.5vh;
     }
     h2{
         font-size: 18px;
+    }
+    .footerLeft .logo svg{
+        margin-left: -20px;
+        text-align: center;
+        width: 185px;
+        height: 95px;
     }
     .footerMiddle, .footerRight, .footerLeft .logo{
        margin-left: -15px;
@@ -194,7 +205,7 @@ span i:hover{
         text-align: center;
         align-items: center;
         top: 98%;
-        left: 19%;
+        left: 15%;
         font-size: 10PX;
     }
 
