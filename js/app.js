@@ -94,5 +94,5 @@ navClose();
 
 window.addEventListener('load', setTimeout(() => {
     loader.classList.add('preload-finish');
-}, 0));
+}, 3000));
 
