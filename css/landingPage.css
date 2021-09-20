@@ -111,9 +111,13 @@
         opacity: 0;
     }
 
+    .burger .fas2 {
+        display: none;
+    }
     .burger {
         display: block;
         cursor : pointer;
+        color: white;
     }
 }
 
@@ -152,16 +156,12 @@
     }
 }
 
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+.toggle .fas1 {
+    display: none;
 }
-
-.toggle .line2 {
-    opacity: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+.toggle .fas2 {
+    color: white;
+    display: block;
 }
 
 
