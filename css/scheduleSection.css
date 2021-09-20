@@ -141,6 +141,9 @@
     .schedule{
         width:100%;
     }
+    .schedule p{
+        width: 80%;
+    }
 }
 @media (max-width: 767px) {
     .scheduleHeading h1{
@@ -152,12 +155,19 @@
     }
     .schedule p{
         float: left;
+        width: 100%;
+        font-size: 15px;
+        text-align: justify;
     }
     .schedule{
         width:100%;
+        margin: 0;
     }
     .schedule:before{
         left: 20px;
+    }
+    .schedule ul li{
+        margin:27px 0;
     }
     .schedule ul li:nth-child(odd),
     .schedule ul li:nth-child(even){
