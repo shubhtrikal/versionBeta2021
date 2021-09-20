@@ -219,19 +219,18 @@
     margin-bottom: 10px;
 }
 
-.dashboard,
-.dashboard::after {
+button,
+button::after {
     width     : 250px;
     height    : 50px;
     font-size : 25px;
-    background: #de6161;
-    background: -webkit-linear-gradient(to right, #2657eb, #de6161);
-    background: linear-gradient(to right, #2657eb, #de6161);
-
-    border        : 0;
+    background: #CB356B;  
+    background: -webkit-linear-gradient(to right, #BD3F32, #fd2876);  
+    background: linear-gradient(to right, #eb6657, #eb246d);
+    border        : white;
     color         : #fff;
-    letter-spacing: 3px;
-    box-shadow    : 6px 0px 0px #de6161;
+    letter-spacing: 1px;
+    box-shadow: 2px 50px 50px -20px #252525;
     outline       : transparent;
     position      : relative;
     cursor        : pointer;
@@ -239,7 +238,7 @@
     margin-left   : 20px;
 }
 
-.dashboard::after {
+button::after {
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
     --slice-2: inset(50% -6px 30% 0);
@@ -254,18 +253,16 @@
     left      : 0;
     right     : 0;
     bottom    : 0;
-    background: #de6161;
-    background: -webkit-linear-gradient(to right, #2657eb, #de6161);
-    background: linear-gradient(to right, #2657eb, #de6161);
-
-
+    background: #CB356B;  
+    background: -webkit-linear-gradient(to right, #BD3F32, #fd2876);  
+    background: linear-gradient(to right, #eb6657, #eb246d);
     text-shadow: -3px -3px 0px #051df8, 3px 3px 0px #00E6F6;
     margin-left: 8px;
     clip-path  : var(--slice-0);
 }
 
-.dashboard:hover::after {
-    animation                : 1s glitch;
+button:hover::after {
+    /* animation                : 1s glitch; */
     animation-timing-function: steps(2, end);
 }
 

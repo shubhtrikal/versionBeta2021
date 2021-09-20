@@ -32,7 +32,7 @@
 p.accordion {
     background: linear-gradient(180deg, rgba(16, 156, 165, 0.2) 0%, rgba(138, 176, 210, 0.04) 100%), #FFFFFF;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
-    color: #444;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -89,7 +89,13 @@ div.panel.show {
     max-height: 500px; 
 }
 
-
+@media screen and (max-width:434px) {
+      
+    .accordion{
+        font-size: 12px;
+    }
+      
+}
 @media screen and (max-width:822px) {
      
     .heading-faq h3{
@@ -97,6 +103,7 @@ div.panel.show {
        font-size: 35px;
         margin: 7%;
     }
+
     .container-faq{
         margin-right: 12%;
         margin-left: 12%;
@@ -105,7 +112,7 @@ div.panel.show {
         justify-content: center;
     }
     
-.list-item{
+   .list-item{
     margin: 0%;
-}
+   }
 }
