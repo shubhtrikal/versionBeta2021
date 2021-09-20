@@ -33,6 +33,9 @@ span i:hover{
 }
 .footer-section{
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     padding: 0 50px;
     display: grid;
     grid-template-columns: 34% 34% 34%;
@@ -50,15 +53,13 @@ span i:hover{
 }
 
 .footerLeft .logo svg{
-    width: 250px;
-    height: 150px;
-    margin-top: 70px;
-    margin-left: 105px;
+    width: 220px;
+    margin-left: 40px;
+    height: 120px;
 }
 
-.footerMiddle, .footerRight {
-    margin-top: 50px;
-    margin-left: 60px;
+.footerMiddle {
+    margin-left: 90px;
 }
 
 .footerMiddle .address a, .footerMiddle .contact a, .footerRight .mail a, .footerRight .social {
@@ -74,20 +75,25 @@ span i:hover{
     margin-bottom: 55px;
 }
 
+.social{
+    margin: 0;
+    padding: 0;
+}
 .social-icon{
-    position: absolute;
-    top: 69%;
-    left: 77%;
-    transform: translate(-50%,-50%);
     display: flex;
-    cursor: pointer;
 }
 
+.footerRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+}
 .social-icon .icon{
     position: relative;
     width: 50px;
     height: 50px;
-    margin: 5px;
+    padding: 0;
     border-radius: 50px;
     transition: all .8s;
 }
@@ -144,6 +150,8 @@ span i:hover{
         text-align: center;
     }
     .footer-section{
+        position: absolute;
+        top: 5%;
         width: 97%;
         min-height: 55vh;
         text-align: center;
@@ -165,19 +173,20 @@ span i:hover{
     }
     
 }   
-@media (max-width: 600px) {
+@media (max-width: 868px) {
     footer{
         width: 100%;
-        min-height: 115vh;
+        height: 110vh;
         display: block;
         text-align: center;
     }
     .footer-section{
+        position: relative;
+        top: 2%;
+        display: flex;
+        flex-direction: column;
         width: 97%;
-        min-height: 110vh;
-        display: block;
-        text-align: center;
-        top: 2.5vh;
+        height: 105vh;
     }
     h2{
         font-size: 18px;
@@ -190,6 +199,9 @@ span i:hover{
     }
     .footerMiddle, .footerRight, .footerLeft .logo{
        margin-left: -15px;
+    }
+    .footerMiddle, .footerRight, .footerLeft{
+        margin: 30px 0;
     }
     .footerMiddle .address {
         margin-bottom: 40px;
@@ -205,8 +217,13 @@ span i:hover{
         text-align: center;
         align-items: center;
         top: 98%;
-        left: 15%;
         font-size: 10PX;
     }
 
 } 
+
+@media (max-width: 500px){
+    .copyright{
+        left: 14%;
+    }
+}
