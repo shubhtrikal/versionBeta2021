@@ -50,7 +50,7 @@ p .accordion.active, p .accordion:hover {
     
 }
 .accordion{
-     font-weight: 300;
+     font-weight: 500;
      font: bold;
 }
 
@@ -65,7 +65,9 @@ p.accordion:after {
 
 
 p.accordion.active:after {
+    
     content: "\2796"; 
+    
 }
 
 
@@ -85,6 +87,7 @@ div .panel {
 }
 
 div.panel.show {
+    transition:  ease-in-out 2s;
     opacity: 1;
     max-height: 500px; 
 }
