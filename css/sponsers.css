@@ -45,8 +45,9 @@
 .sponsers img{
      height: auto ;
      width: 60% ;
-    object-fit: cover;
-    object-position: center;
+     cursor: pointer;
+     object-fit: cover;
+     object-position: center;
 }
 
 @media screen  and (max-width:900px){
