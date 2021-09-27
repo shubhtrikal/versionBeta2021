@@ -18,6 +18,7 @@
 .about-left{
     overflow: hidden;
     background: url(../images/aboutImage.jpg);
+    filter: drop-shadow(8px 8px 3px rgba(0, 0, 0, 0.25));
     background-position: center;
     background-repeat: no-repeat;
     width: 50%;
