@@ -150,8 +150,8 @@
         width: 80%;
     }
     .schedule-content p span{
-        font-weight: 700;
-        font-size: 14px;
+        font-weight: 600;
+        font-size: 11px;
     }
 }
 @media (max-width: 767px) {
