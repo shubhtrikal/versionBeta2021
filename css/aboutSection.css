@@ -6,6 +6,7 @@
 }
 
 .about-section{
+    overflow-x: hidden;
     margin-top: 50px;
     width: 100%;
     min-height: 95vh;
