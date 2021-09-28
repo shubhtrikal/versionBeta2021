@@ -137,12 +137,21 @@
     box-shadow: 0 0 0 3px rgba(33, 233, 200, 0.3);
 }
 
+.schedule-content p span{
+    font-weight: 600;
+    font-size: 17px;
+}
+
 @media (max-width: 1000px){
     .schedule{
         width:100%;
     }
     .schedule p{
         width: 80%;
+    }
+    .schedule-content p span{
+        font-weight: 700;
+        font-size: 14px;
     }
 }
 @media (max-width: 767px) {
