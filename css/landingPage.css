@@ -207,19 +207,8 @@
     padding            : 8px 0;
 }
 
-.main-sponsor .sp{
-    width     : 230px;
-    padding: 6px;
-    background: white;
-    border-radius: 25px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .main-sponsor img {
-    width: 80%;
+    width: 75%;
 }
 
 .main-sponsor p {
