@@ -23,3 +23,9 @@
 .up-down:hover{
     height: 80px;
 }
+
+@media  (max-width:600px) {
+    .up-down:hover{
+        height: 50px;
+    }
+}
