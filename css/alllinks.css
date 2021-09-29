@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.links-section{
+     width: 100%;
+}
+
+.rulebook {
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+}
+
+.shortlist{
+    display: block;
+    text-align: center;
+    margin: 3%;
+}
+.shortlist p{
+    
+    margin: 2%;
+    font-size: 15px;
+}
+
+.shortlist button ,.rulebook button{
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+    border-style: hidden;
+    width: auto;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    font-size: 17px;
+    box-shadow: 2px 20px 20px -22px #161616;
+    background     : linear-gradient(264.55deg, #243E94 -1.6%, rgba(5, 250, 193, 0.79) 105.68%, rgba(5, 250, 193, 0.79) 105.68%);
+}
+
+
+@media screen  and (max-width:1000px){
+     
+  
+    .shortlist p{
+         font-size: 12px;
+         margin: 3%;
+    }
+  
+         
+.shortlist button ,.rulebook button{
+    width: auto;
+    border-radius: 10px;
+    padding: 13px;
+    margin: 13px;
+    font-size: 12px;
+
+}
+
+     
+}
