@@ -218,26 +218,29 @@
 }
 
 .dashboard {
-    width     : 230px;
-    height    : 46px;
-    font-size : 20px;
-    font-weight: 500;
-    background: #CB356B;  
+    /* width     : 230px;
+    height    : 46px; */
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px;
+    background: #CB356B;
+    text-transform: none;
+    display: flex; 
     background: -webkit-linear-gradient(to right, #BD3F32, #fd2876);  
     background: linear-gradient(to right, #eb6657, #eb246d);
     border        : white;
     color         : #fff;
-    letter-spacing: 1px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     outline       : transparent;
     cursor        : pointer;
-    border-radius : 25px;
-    border: 0.5px solid white;
-    /* margin-left   : 10px; */
+    border-radius : 15px;
+    border: 0.3px solid white;
 }
 
  .dashboard:hover{
-     transition: 0.6s;
+    transition: 0.6s;
+    border-radius : 25px;
+    border: none;
     transform: scale(1.08);
 }
 
@@ -294,9 +297,10 @@
         height: 36px;
     }
     .dashboard{
-        font-size: 17px;
+        font-size: 15px;
+        
         width: 200px;
-        height: 36px;
+        height: 46px;
     }
     .main-sponsor p {
         font-size    : 0.8em;
