@@ -226,10 +226,15 @@
     outline       : transparent;
     cursor        : pointer;
     border-radius : 3px;
+    transition: 0.6s;
 }
 
+.dashboard a{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
 .dashboard:hover {
-    transition: 0.6s;
     transform : scale(1.08);
 }
 
