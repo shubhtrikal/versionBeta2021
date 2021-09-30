@@ -5,7 +5,7 @@ $(document).ready(function () {
         $(this).addClass('active');
         thisAttrHref = $(this).attr('href');
         thisAttrHrefOffset = $(thisAttrHref).offset().top;
-        $('html,body').animate({ scrollTop: thisAttrHrefOffset });
+        $('html,body').animate({ scrollTop: thisAttrHrefOffset - 100 });
         event.preventDefault();
     });
 });
