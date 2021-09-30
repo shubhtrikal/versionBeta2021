@@ -50,6 +50,10 @@
      object-position: center;
 }
 
+.sponsers img:hover{
+    transform : scale(1.04);
+}
+
 @media screen  and (max-width:900px){
     
     .sponsers-heading h1{

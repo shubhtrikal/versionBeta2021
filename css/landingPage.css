@@ -216,7 +216,6 @@
     font-weight   : 600;
     padding       : 12px 20px;
     background    : #CB356B;
-    /* text-transform: none; */
     display       : flex;
     background    : -webkit-linear-gradient(to right, #BD3F32, #fd2876);
     background    : linear-gradient(to right, #eb6657, #eb246d);
@@ -231,6 +230,7 @@
 
 .dashboard a{
     display: flex;
+    text-decoration: none;
     align-items: center;
     color: #fff;
 }
