@@ -86,7 +86,9 @@ div .panel {
     width: 90%;
     border-left: 3px solid #6cd2da;
 }
-
+.panel a{
+    text-decoration: none;
+}
 div.panel.show {
     transition:  ease-in-out 2s;
     opacity: 1;
@@ -103,7 +105,6 @@ div.panel.show {
 @media screen and (max-width:822px) {
      
     .heading-faq h3{
-      font-family:  'Montserret', serif; ;
        font-size: 35px;
         margin: 7%;
     }
