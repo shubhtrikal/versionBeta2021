@@ -35,6 +35,7 @@
     padding: 20px;
     margin: 20px;
     font-size: 17px;
+    transform : scale(1.05);
     box-shadow: 2px 20px 20px -22px #161616;
     background     : linear-gradient(264.55deg, #243E94 -1.6%, rgba(5, 250, 193, 0.79) 105.68%, rgba(5, 250, 193, 0.79) 105.68%);
 }

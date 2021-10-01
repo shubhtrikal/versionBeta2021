@@ -32,7 +32,7 @@
 p.accordion {
     background: linear-gradient(180deg, rgba(16, 156, 165, 0.2) 0%, rgba(138, 176, 210, 0.04) 100%), #FFFFFF;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
-    color: black;
+    color: #000000;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -45,8 +45,8 @@ p.accordion {
 }
 
 
-p .accordion.active, p .accordion:hover {
-    background-color: #ddd;
+p.accordion.active, p.accordion:hover {
+    color: #0d6efd;
     
 }
 .accordion{
@@ -58,14 +58,15 @@ p .accordion.active, p .accordion:hover {
 p.accordion:after {
     content: '\2795'; 
     font-size: 13px;
-    color: rgb(247, 241, 241);
+    color: #000000;
+    /* color: rgb(247, 241, 241); */
     float: right;
     margin-left: 5px;
 }
 
 
 p.accordion.active:after {
-    
+    color: #0d6efd;
     content: "\2796"; 
     
 }
