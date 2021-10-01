@@ -154,6 +154,9 @@ span i:hover{
 .privacy ul li{
     margin-left: 30px;
 }
+.privacy ul li a:hover{
+    color: #6cd2da;
+}
 .privacy a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.705);;
