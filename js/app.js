@@ -100,7 +100,7 @@ $(document).ready(function() {
   
       if ($('#ctn-preloader').hasClass('loaded')) {
         // Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
-        $('#preloader').delay(8000).queue(function() {
+        $('#preloader').delay(0).queue(function() {
           $(this).remove();
         });
       }

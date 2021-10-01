@@ -113,10 +113,10 @@
     padding: 0;
     font-size: 14px;
 }
-.schedule ul li:nth-child(odd) .schedule-register{
+.schedule ul li:nth-child(1) .schedule-register{
     position: absolute;
     top: 12px;
-    right: -230px;
+    right: -210px;
     margin: 0;
     padding: 8px 16px;
     background: #109CA5;
@@ -124,8 +124,29 @@
     border-radius: 18px;
     box-shadow: 0 0 0 3px rgba(33,233,200,0.3);
 }
-
-.schedule ul li:nth-child(even) .schedule-register{
+.schedule ul li:nth-child(3) .schedule-register{
+    position: absolute;
+    top: 12px;
+    right: -245px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #109CA5;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(33,233,200,0.3);
+}
+.schedule ul li:nth-child(5) .schedule-register{
+    position: absolute;
+    top: 12px;
+    right: -180px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #109CA5;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(33,233,200,0.3);
+}
+.schedule ul li:nth-child(2) .schedule-register{
     position: absolute;
     top: 12px;
     left: -230px;
@@ -136,6 +157,40 @@
     border-radius: 18px;
     box-shadow: 0 0 0 3px rgba(33, 233, 200, 0.3);
 }
+.schedule ul li:nth-child(4) .schedule-register{
+    position: absolute;
+    top: 12px;
+    left: -205px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #109CA5;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(33, 233, 200, 0.3);
+}
+/* .schedule ul li:nth-child(odd) .schedule-register{
+    position: absolute;
+    top: 12px;
+    right: -230px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #109CA5;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(33,233,200,0.3);
+} */
+
+/* .schedule ul li:nth-child(even) .schedule-register{
+    position: absolute;
+    top: 12px;
+    left: -230px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #109CA5;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(33, 233, 200, 0.3);
+} */
 
 .schedule-content p span{
     font-weight: 600;
