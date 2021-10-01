@@ -107,3 +107,35 @@ $(document).ready(function() {
     }, 3000);
     
   });
+
+
+
+  
+  function makeTimer() {
+
+	//		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");	
+		var endTime = new Date("30 October 2021 19:27:00 GMT+01:00");			
+			endTime = (Date.parse(endTime) / 1000);
+
+			var now = new Date();
+			now = (Date.parse(now) / 1000);
+
+			var timeLeft = endTime - now;
+
+			var days = Math.floor(timeLeft / 86400); 
+			var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+			var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+			var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+  
+			if (hours < "10") { hours = "0" + hours; }
+			if (minutes < "10") { minutes = "0" + minutes; }
+			if (seconds < "10") { seconds = "0" + seconds; }
+
+			$("#days").html(days + "<br><span>Days</span><br><br>");
+			$("#hours").html(hours + "<br><span>Hours</span><br><br>");
+			$("#minutes").html(minutes + "<br><span>Minutes</span><br><br>");
+			$("#seconds").html(seconds + "<br><span>Seconds</span><br><br>");		
+
+	}
+
+	setInterval(function() { makeTimer(); }, 1000);

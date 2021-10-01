@@ -23,6 +23,71 @@
 
 
 
+.clock {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  #timer {
+      /* margin-top:3%; */
+      display: flex;
+      justify-content: center;
+     
+     /* padding: 4%; */
+     line-height: 1;
+     font-size: 10px;
+  }
+  
+  .time{
+      padding: 3%;
+      margin: 1%;
+      text-align: center;
+     /* font-size: 14px; */
+  }
+  #days span{
+
+    font-size: 15px;
+    color: white;
+  }
+  #hours span{
+    font-size: 15px;
+    color: white;
+  }
+  #minutes  span{
+    font-size: 15px;
+    color: white;
+  }
+  #seconds span{
+    font-size: 15px;
+    color: white;
+  }
+
+ 
+  #days {
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+  }
+  #hours {
+    font-weight: 600;
+    font-size: 30px;
+     color: white;
+  }
+  #minutes {
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+  }
+  #seconds {
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+  }
+
+
+
 .no-scroll-y {
 	overflow-y: hidden;
 }
@@ -174,6 +239,45 @@
 @media screen and (max-width: 767px) {
 	/* Preloader */
 	/* Spinner cargando */	
+    .clock{
+        margin-top: 10%;
+    }
+    #days span{
+
+     font-size: 12px;
+     color: #f7f2f2;
+   }
+   #hours span{
+     font-size: 12px;
+     color: #f8f7f6;
+   }
+   #minutes  span{
+     font-size: 12px;
+     color: #fdfdfc;
+   }
+   #seconds span{
+     font-size: 12px;
+     color: #fefffd;
+   }
+   #days{
+       font-size: 25px;
+   }
+   #hours{
+     font-size: 25px;
+ }
+ #minutes{
+     font-size: 25px;
+ }
+ #seconds{
+     font-size: 25px;
+ }
+ 
+     .time{
+         font-size: 1px;
+         padding: 3%;
+         margin: 0%;
+     }
+   
 	.ctn-preloader .animation-preloader .spinner {
 		height: 8em;
 		width: 8em;
@@ -445,6 +549,43 @@
 }
 
 @media screen and (max-width: 600px) {
+    
+    .time{
+        padding: 5%;
+    }
+  
+    #days span{
+
+        font-size: 10px;
+        color: #f7f2f2;
+      }
+      #hours span{
+        font-size: 10px;
+        color: #f8f7f6;
+      }
+      #minutes  span{
+        font-size: 10px;
+        color: #fdfdfc;
+      }
+      #seconds span{
+        font-size: 10px;
+        color: #fefffd;
+      }
+    #days{
+        font-size: 20px;
+    }
+    #hours{
+      font-size: 20px;
+  }
+  #minutes{
+      font-size: 20px;
+  }
+  #seconds{
+      font-size: 20px;
+  }
+    
+    
+    
     .logo .create0 {
         stroke: white;
     }
