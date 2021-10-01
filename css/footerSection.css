@@ -121,8 +121,8 @@ span i:hover{
     transform: translate(-50%,-50%);
 }
 .copyright{
-    top: 93%;
-    left: 37%;
+    top: 93.5%;
+    left: 10%;
     font-size: 14px;
     position: absolute;
     color: rgba(255, 255, 255, 0.705);   
@@ -137,6 +137,27 @@ span i:hover{
     color: #6cd2da;
 }
 
+.privacy{
+    top: 93.5%;
+    right: 10%;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-style: italic;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.705);
+}
+.privacy ul{
+    display: flex;
+    flex-direction: row;
+}
+.privacy ul li{
+    margin-left: 30px;
+}
+.privacy a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.705);;
+}
 @media (max-width: 1025px){
     footer{
         width: 100%;
@@ -158,8 +179,14 @@ span i:hover{
     }
     .copyright{
         top: 95%;
-        left: 35%;
+        left: 10%;
         font-size: 13px;
+    }
+    .privacy{
+        top: 95%;
+        right: 10%;
+        font-size: 13px;
+        display: block;
     }
     .social-icon {
         top: 75%;
@@ -170,7 +197,7 @@ span i:hover{
 @media (max-width: 868px) {
     footer{
         width: 100%;
-        height: 110vh;
+        height: 112vh;
         display: block;
         text-align: center;
     }
@@ -203,21 +230,53 @@ span i:hover{
     .footerRight .social {
         margin-top: -10px;
     }
+    .social{
+        margin-left: 20px;
+    }
     .social-icon {
         top: 94%;
         left: 50%;
     }
     .copyright{
-        text-align: center;
+        
         align-items: center;
-        top: 98%;
-        font-size: 10PX;
+        top: 96.7%;
+        left: 5%;
+        font-size: 11PX;
+    }
+    .copyright .all{
+        display: flex;
+        flex-direction: row;
+    }
+    .privacy{
+        top: 97%;
+        right: 5%;
+        font-size: 11px;
     }
 
 } 
 
 @media (max-width: 500px){
     .copyright{
-        left: 14%;
+        font-size: 9PX;
+        top: 96.3%;
+        left: 2%;
+    }
+    .privacy{
+        font-size: 9px;
+        top: 96.5%;
+        right: 2%;
+    }
+    .privacy ul{
+        display: block;
+    }
+    .privacy ul li{
+        margin-left: 5px;
+    }
+    .social{
+        margin-left: 20px;   
+    }
+    .social-icon {
+        left: 50%;
     }
 }
