@@ -104,6 +104,6 @@ $(document).ready(function() {
           $(this).remove();
         });
       }
-    }, 9000);
+    }, 3000);
     
   });
