@@ -52,7 +52,7 @@ span i:hover{
     backdrop-filter: blur(16px);
 }
 
-.footerLeft .logo svg{
+.footerLeft .logo img{
     width: 220px;
     margin-left: 40px;
     height: 120px;
@@ -174,7 +174,7 @@ span i:hover{
         min-height: 55vh;
         text-align: center;
     }
-    .footerLeft .logo svg{
+    .footerLeft .logo img{
         margin-left: -20px;
         text-align: center;
         width: 200px;
@@ -215,7 +215,7 @@ span i:hover{
     h2{
         font-size: 18px;
     }
-    .footerLeft .logo svg{
+    .footerLeft .logo img{
         margin-left: -20px;
         text-align: center;
         width: 185px;

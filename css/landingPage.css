@@ -305,15 +305,16 @@
 
 
 
-.logo svg {
-    height: 50px;
+.logo img {
+    height: 68px;
+    width: 120px;
 }
 
-.logo .create0 {
+.logo img .create0 {
     stroke: black;
 }
 
-.logo .create1 {
+.logo img .create1 {
     fill: black;
 }
 
@@ -458,7 +459,7 @@
     align-items    : center;
 }
 
-.landing-page-left svg {
+.landing-page-left img {
     width: 90%;
 }
 
@@ -470,11 +471,11 @@
     align-items   : center;
 }
 
-.landing-page-right svg {
+.landing-page-right img {
     width: 70%;
 }
 
-.main-sponsor {
+/* .main-sponsor {
     margin        : 12px 0;
     display       : flex;
     flex-direction: column;
@@ -492,7 +493,7 @@
     font-size    : 1.1em;
     color        : white;
     margin-bottom: 10px;
-}
+} */
 
 .dashboard {
     font-size     : 18px;
@@ -586,11 +587,11 @@
     
     
     
-    .logo .create0 {
+    .logo img .create0 {
         stroke: white;
     }
 
-    .logo .create1 {
+    .logo img .create1 {
         fill: white;
     }
 
@@ -610,10 +611,10 @@
         background-size: contain;
     }
 
-    .main-sponsor .sp {
+    /* .main-sponsor .sp {
         width : 200px;
         height: 36px;
-    }
+    } */
 
     .dashboard {
         font-size: 15px;
@@ -622,17 +623,17 @@
         height: 46px;
     }
 
-    .main-sponsor p {
+    /* .main-sponsor p {
         font-size: 0.8em;
-    }
+    } */
 }
 
 @media screen and (max-width: 350px) {
-    .logo .create0 {
+    .logo img .create0 {
         stroke: white;
     }
 
-    .logo .create1 {
+    .logo img .create1 {
         fill: white;
     }
 
@@ -640,7 +641,7 @@
         padding: 8px 12px;
     }
 
-    .main-sponsor img {
+    /* .main-sponsor img {
         width: 100%;
-    }
+    } */
 }
