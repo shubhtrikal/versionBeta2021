@@ -19,14 +19,19 @@
     text-align: center;
     margin: 3%;
 }
+
 .shortlist p{
-    
     margin: 2%;
     font-size: 15px;
 }
+
 .shortlist a{
     text-decoration: none;
 }
+.shortlist a:hover ,.rulebook a:hover{
+    transform: scale(1.04);
+}
+
 .shortlist button ,.rulebook button{
     font-weight: 700;
     cursor: pointer;
@@ -37,7 +42,7 @@
     padding: 20px;
     margin: 20px;
     font-size: 17px;
-    transform : scale(1.05);
+    /* transform : scale(1.05); */
     box-shadow: 2px 20px 20px -22px #161616;
     background     : linear-gradient(264.55deg, #243E94 -1.6%, rgba(5, 250, 193, 0.79) 105.68%, rgba(5, 250, 193, 0.79) 105.68%);
 }

@@ -130,7 +130,7 @@ span i:hover{
 
 .copyright a{
     text-decoration: none;
-    color: #6cd2da;
+    color: rgba(255, 255, 255, 0.705);
 }
 
 .copyright span{
@@ -142,7 +142,7 @@ span i:hover{
     color: rgba(255, 255, 255, 0.705);;
 }
 
-.copyright span:hover{
+.copyright a:hover{
     color: #6cd2da;
 }
 
