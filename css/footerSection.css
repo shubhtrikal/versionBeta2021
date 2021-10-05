@@ -7,7 +7,8 @@
 footer{
     width: 100%;
     min-height: 54vh;
-    background: #013D41;
+    /* background: #013D41; */
+    background-color: #062c46;
     position: relative;
     overflow: hidden;
 }

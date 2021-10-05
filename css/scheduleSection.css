@@ -30,7 +30,8 @@
     left: 50%;
     width: 2px;
     height: 94%;
-    background: #6AB6BB;
+    /* background: #6AB6BB; */
+    background: linear-gradient(#1f323f,#095880);
 }
 .schedule ul{
     margin: 0;
@@ -101,6 +102,7 @@
     padding: 0;
     font-weight: 600;
     color: #109CA5;
+    
 }
 
 .schedule ul li p{
@@ -119,7 +121,8 @@
     right: -210px;
     margin: 0;
     padding: 8px 16px;
-    background: #109CA5;
+    /* background: #109CA5; */
+    background: linear-gradient(#1f323f,#095880);
     color: #fff;
     border-radius: 18px;
     box-shadow: 0 0 0 3px rgba(33,233,200,0.3);
@@ -130,7 +133,8 @@
     right: -245px;
     margin: 0;
     padding: 8px 16px;
-    background: #109CA5;
+    /* background: #109CA5; */
+    background: linear-gradient(#1f323f,#095880);
     color: #fff;
     border-radius: 18px;
     box-shadow: 0 0 0 3px rgba(33,233,200,0.3);
@@ -141,7 +145,8 @@
     right: -180px;
     margin: 0;
     padding: 8px 16px;
-    background: #109CA5;
+    /* background: #109CA5; */
+    background: linear-gradient(#1f323f,#095880);
     color: #fff;
     border-radius: 18px;
     box-shadow: 0 0 0 3px rgba(33,233,200,0.3);
@@ -152,7 +157,8 @@
     left: -230px;
     margin: 0;
     padding: 8px 16px;
-    background: #109CA5;
+    /* background: #109CA5; */
+    background: linear-gradient(#1f323f,#095880);
     color: #fff;
     border-radius: 18px;
     box-shadow: 0 0 0 3px rgba(33, 233, 200, 0.3);
@@ -163,7 +169,8 @@
     left: -205px;
     margin: 0;
     padding: 8px 16px;
-    background: #109CA5;
+    /* background: #109CA5; */
+    background: linear-gradient(#1f323f,#095880);
     color: #fff;
     border-radius: 18px;
     box-shadow: 0 0 0 3px rgba(33, 233, 200, 0.3);
