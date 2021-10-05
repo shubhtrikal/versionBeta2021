@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300;400&display=swap'); */
 
 
 * {
@@ -7,7 +8,9 @@
     box-sizing       : border-box;
     scroll-behavior  : smooth;
     scroll-margin-top: 300px;
-    font-family      : 'Montserrat', sans-serif;
+    /* font-family      : 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+   
 }
 
 /* .preloader {
@@ -310,18 +313,19 @@
     width: 120px;
 }
 
-.logo img .create0 {
-    stroke: black;
+ .logo img .create0  {
+    stroke: rgb(231, 226, 226);
 }
 
 .logo img .create1 {
-    fill: black;
+    fill: rgb(248, 244, 244);
 }
 
 .landing-page {
     width     : 100%;
     min-height: 100vh;
-    background: linear-gradient(264.55deg, #243E94 -1.6%, rgba(5, 250, 193, 0.79) 105.68%, rgba(5, 250, 193, 0.79) 105.68%);
+    background-image: linear-gradient(#1f323f,#3e80a1);
+    /* background: linear-gradient(264.55deg, #243E94 -1.6%, rgba(5, 250, 193, 0.79) 105.68%, rgba(5, 250, 193, 0.79) 105.68%); */
 }
 
 /* navbar css */
@@ -348,9 +352,11 @@
 
 .nav-links li a {
     color          : white;
-    font-size      : 20px;
+    font-size      : 23px;
     text-decoration: none;
     font-family    : 'Montserrat', sans-serif;
+    /* font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif; */
     border-bottom  : 3px solid transparent;
 }
 
@@ -374,7 +380,8 @@
         right         : 0;
         height        : 93vh;
         top           : 9vh;
-        background    : linear-gradient(264.55deg, #243E94 -1.6%, rgba(5, 250, 193, 0.79) 105.68%, rgba(5, 250, 193, 0.79) 105.68%);
+        /* background    : linear-gradient(264.55deg, #243E94 -1.6%, rgba(5, 250, 193, 0.79) 105.68%, rgba(5, 250, 193, 0.79) 105.68%); */
+        background-image: linear-gradient(#1f323f,#3e80a1);
         display       : flex;
         flex-direction: column;
         align-items   : center;
@@ -406,7 +413,8 @@
 }
 
 .nav-color {
-    background     : linear-gradient(264.55deg, #243E94 -1.6%, rgba(5, 250, 193, 0.79) 105.68%, rgba(5, 250, 193, 0.79) 105.68%);
+    /* background     : linear-gradient(264.55deg, #243E94 -1.6%, rgba(5, 250, 193, 0.79) 105.68%, rgba(5, 250, 193, 0.79) 105.68%); */
+    background-image: linear-gradient(#1f323f,#095880);
     backdrop-filter: blur(10px);
 }
 

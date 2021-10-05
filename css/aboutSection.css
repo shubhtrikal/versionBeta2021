@@ -44,7 +44,7 @@
     font-size: 50px;
     color: #0C155E;
     font-weight: lighter;
-    letter-spacing: 12px;
+    letter-spacing: 9px;
 }
 
 @media screen and (max-width: 1100px){
@@ -74,7 +74,7 @@
         font-size: 40px;
         color: #0C155E;
         font-weight: lighter;
-        letter-spacing: 9px;
+        letter-spacing: 8px;
     }
     
     .about-left{
