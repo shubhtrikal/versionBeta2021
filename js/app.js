@@ -68,6 +68,9 @@ const navClose = () => {
             if (body.classList.contains('fixed-body')) {
                 body.classList.toggle('fixed-body');
             }
+            if (nav.style.background) {
+                nav.style.background = '';
+            }
 
             navLinksList.forEach((link) => {
                 link.style.animation = '';
