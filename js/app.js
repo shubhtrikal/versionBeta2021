@@ -18,7 +18,7 @@ const navSlide = () => {
             nav.style.background = '';
         }
         else {
-            nav.style.background = `linear-gradient(264.55deg, #243E94 -1.6%, rgba(5, 250, 193, 0.79) 105.68%, rgba(5, 250, 193, 0.79) 105.68%)`;
+            nav.style.background = `#1f323f`;
         }
 
         navLinks.classList.toggle('nav-active');

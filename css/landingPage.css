@@ -331,13 +331,13 @@
 /* navbar css */
 
 .navbar {
-    padding        : 8px 0;
+    padding        : 0 0;
     position       : fixed;
     z-index        : 999;
     width          : 100%;
     display        : flex;
     justify-content: space-around;
-    min-height     : 8vh;
+    min-height     : 4vh;
 }
 
 
@@ -346,13 +346,13 @@
     justify-content: space-around;
     width          : 65%;
     list-style     : none;
-    margin-top     : 13px;
+    margin-top     : 18px;
 }
 
 
 .nav-links li a {
     color          : white;
-    font-size      : 23px;
+    font-size      : 21px;
     text-decoration: none;
     font-family    : 'Montserrat', sans-serif;
     /* font-family: 'Poppins', sans-serif;
@@ -414,7 +414,8 @@
 
 .nav-color {
     /* background     : linear-gradient(264.55deg, #243E94 -1.6%, rgba(5, 250, 193, 0.79) 105.68%, rgba(5, 250, 193, 0.79) 105.68%); */
-    background-image: linear-gradient(#1f323f,#095880);
+    /* background-image: linear-gradient(#1f323f,#095880); */
+    background-color: #2c495c;
     backdrop-filter: blur(10px);
 }
 
@@ -481,6 +482,7 @@
 
 .landing-page-right img {
     width: 70%;
+    margin-bottom: 30px;
 }
 
 /* .main-sponsor {
