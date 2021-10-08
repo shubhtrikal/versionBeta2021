@@ -371,12 +371,27 @@
   color          : white;
   font-size      : 21px;
   text-decoration: none;
-  border-bottom  : 3px solid transparent;
+  display: inline-block;
+  position: relative;
 }
 
-.nav-links li:hover a,
-.nav-links li a.active {
-  border-bottom: 3px solid white;
+.nav-links li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  top: 35px;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom center;
+  transition: transform 0.2s ease-out;
+}
+
+.nav-links li a:hover:after,
+.nav-links li a.active:after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
 }
 
 .burger {
