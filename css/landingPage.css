@@ -368,7 +368,7 @@
 
 
 .nav-links li a {
-  color          : white;
+  color          : rgba(241, 236, 236, 0.925);
   font-size      : 21px;
   text-decoration: none;
   display: inline-block;
@@ -383,7 +383,7 @@
   height: 3px;
   top: 35px;
   left: 0;
-  background-color: white;
+  background-color: rgb(247, 242, 242);
   transform-origin: bottom center;
   transition: transform 0.2s ease-out;
 }
@@ -522,6 +522,20 @@
   margin-bottom: 30px;
 }
 
+.hack{
+  background: linear-gradient(180deg, rgba(17, 18, 19, 0.8) 0%, rgba(196, 196, 196, 0) 100%);
+  opacity: 0.5;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(4px);
+  padding: 2px;
+  color: white;
+  font-weight: bold;
+}
+.hack a{
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
 .main-sponsor {
     margin        : 12px 0;
     display       : flex;
@@ -676,9 +690,13 @@
     height: 46px;
   }
 
+  .hack{
+    font-size: 0.8em;
+  }
+
   .main-sponsor img {
     width: 90%;
-}
+  }
 
   .main-sponsor p {
         font-size: 0.7em;
@@ -696,6 +714,10 @@
 
   .navbar {
     padding: 0 12px;
+  }
+
+  .hack{
+    font-size: 0.7em;
   }
 
   .main-sponsor img {
