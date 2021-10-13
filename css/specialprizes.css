@@ -9,7 +9,7 @@
     font-size: 45px;
     letter-spacing: 12px;
     color:#0C155E;
-    font-weight: lighter;
+    font-weight: bold;
 }
 .special-prizes{
    min-height: 60vh;
@@ -43,7 +43,8 @@
      }
     .special-prizes-heading h3{
         font-size: 25px;
-       letter-spacing: 8px;
+        font-weight: bold;
+        letter-spacing: 8px;
     }
 
     .special-prize-1 img{

@@ -15,7 +15,7 @@
     text-align: center;
     margin: 4%;
     color: #0C155E;
-    font-weight: lighter;
+    font-weight: bold;
     letter-spacing: 9px;
     font-size: 55px; 
 }
@@ -57,7 +57,7 @@
 @media screen  and (max-width:900px){
     
     .sponsers-heading h1{
-       
+        font-weight: bold;
         margin: 8%;
         letter-spacing: 8px;
         font-size: 35px; 

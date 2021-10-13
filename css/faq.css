@@ -16,7 +16,7 @@
     margin-top: 5%;
     font-size: 55px;
     color: #0C155E;
-    font-weight: lighter;
+    font-weight: bold;
     letter-spacing: 9px;
    
 }
@@ -104,8 +104,9 @@ div.panel.show {
 @media screen and (max-width:822px) {
      
     .heading-faq h3{
-       font-size: 35px;
+        font-size: 35px;
         margin: 7%;
+        font-weight: bold;
         letter-spacing: 8px;
     }
 
