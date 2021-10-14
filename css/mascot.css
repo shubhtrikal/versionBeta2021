@@ -14,11 +14,11 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 0% 9%;
+    padding: 0% 10%;
 }
 
 .mascot1{
-    width: 40%;
+    width: 45%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -43,9 +43,9 @@
     background: url(../images/mascot\ 2021.png);
     background-position: center;
     background-repeat: no-repeat;
-    width: 55%;
+    width: 50%;
     height: 450px;
-    background-size: cover;
+    background-size: contain;
 }
 
 @media screen and (max-width: 1100px){
@@ -75,7 +75,7 @@
     .mascot1 h1{
         font-size: 40px;
         color: #0C155E;
-        font-weight: lighter;
+        font-weight: bold;
         letter-spacing: 8px;
     }
     
