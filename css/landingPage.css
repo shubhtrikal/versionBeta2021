@@ -588,6 +588,10 @@
   transform: scale(1.08);
 }
 
+.clock h3{
+  color : #fff;
+}
+
 @media screen and (max-width: 1025px) {
   .landing-page-content {
     padding-top   : 50px;
